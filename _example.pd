@@ -1,0 +1,53 @@
+#N canvas 601 341 707 429 10;
+#X obj 45 220 += x xspeed;
+#X obj 45 242 print x;
+#X obj 45 194 bng 15 250 50 0 empty empty Add_xspeed_to_x 20 7 0 10
+-262144 -1 -1;
+#X obj 46 131 value x;
+#X obj 96 131 value xspeed;
+#X msg 46 105 100;
+#X msg 96 105 2.5;
+#X obj 46 75 loadbang;
+#X obj 47 315 bng 15 250 50 0 empty empty Print_current_value_of_x
+20 7 0 10 -262144 -1 -1;
+#X obj 47 335 value x;
+#X obj 47 357 print x;
+#X obj 265 194 bng 15 250 50 0 empty empty Subtract_yspeed_from_y 20
+7 0 10 -262144 -1 -1;
+#X obj 267 315 bng 15 250 50 0 empty empty Print_current_value_of_y
+20 7 0 10 -262144 -1 -1;
+#X obj 265 242 print y;
+#X obj 267 335 value y;
+#X obj 267 357 print y;
+#X obj 265 220 -= y yspeed 200 5;
+#X text 262 118 Here y and yspeed values;
+#X text 44 50 Init x and xspeed values;
+#X obj 485 194 bng 15 250 50 0 empty empty Multiply_z_by_zspeed 20
+7 0 10 -262144 -1 -1;
+#X obj 487 315 bng 15 250 50 0 empty empty Print_current_value_of_z
+20 7 0 10 -262144 -1 -1;
+#X obj 487 335 value z;
+#X obj 487 357 print z;
+#X obj 485 220 *= z zspeed;
+#X obj 485 242 print z;
+#X text 482 118 Here z and zspeed values;
+#X text 482 133 are not initialised and;
+#X text 482 149 will be zero;
+#X text 262 149 of [-= ] object;
+#X text 262 133 are initialised on load;
+#X connect 0 0 1 0;
+#X connect 2 0 0 0;
+#X connect 5 0 3 0;
+#X connect 6 0 4 0;
+#X connect 7 0 5 0;
+#X connect 7 0 6 0;
+#X connect 8 0 9 0;
+#X connect 9 0 10 0;
+#X connect 11 0 16 0;
+#X connect 12 0 14 0;
+#X connect 14 0 15 0;
+#X connect 16 0 13 0;
+#X connect 19 0 23 0;
+#X connect 20 0 21 0;
+#X connect 21 0 22 0;
+#X connect 23 0 24 0;
